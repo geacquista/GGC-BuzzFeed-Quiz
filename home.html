@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>What GGC Flavor Are You?</title>
+<title>order@gompei.com</title>
+
 <style>
+
+
+
+
+
 body {
-background-color:#911D34;
-font-family: Helvetica;
+background-color:#ffffff;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #main {
-width: 80%;
-border: 3px white;
+width: 90%;
+border: 3px rgb(255, 255, 255);
 margin: auto;
 padding: 10px;
-background-color: #C9C9C9;
-border-radius: 10px;
+background-color: #ffffff;
 }
 
 #header {
 margin-top: 5;
-border: 5px solid #4c4c4d;
 padding: 5px;
 text-align: center;
 height: 100px;
@@ -31,8 +35,31 @@ text-align: center;
 }
 
 label {
-width: 150px;
-display: auto inline-block;
+width: 300px;
+display: auto ;
+} 
+
+.input-hidden {
+  position: absolute;
+  left: -9999px;
+}
+
+input[type=radio]:checked + label>img {
+  border: 1px solid #fff;
+  box-shadow: 0 0 3px 3px rgb(220, 139, 252);
+}
+
+input[type=radio] + label>img {
+  border: 1px solid #444;
+  width: 150px;
+  height: 150px;
+  transition: 500ms all;
+}
+
+input[type=radio]:checked + label>img {
+  transform: 
+    rotateZ(-10deg) 
+    rotateX(10deg);
 }
 
 button {
@@ -47,56 +74,57 @@ margin-top: 30px;
 <div id="main">
 <div id="header"><h1>Which Gompei's Goat Cheese Flavor Are You??</h1></div>
 
-<form  id="form1">
+<form  id="form">
 
 
 	<p>When do you find yourself in bed?</p>
-	<label><input type="radio" name="bedtime" id="boring" value="blueb" />9 o'clock sharp</label>
-	<label><input type="radio" name="bedtime" id="normal" value="chive" />11PM ~ish~</label>
-	<label><input type="radio" name="bedtime" id="colleg" value="fiery" />10 or 2, no in between</label>
-	<label><input type="radio" name="bedtime" id="lazyyy" value="pinkp" />When am I not in bed?</label>
+	<input type="radio" name="bedtime" id="boring" value="plain blueb" class="input-hidden"/><label for="boring"><img src="buttons/9.png"></label>
+	<input type="radio" name="bedtime" id="normal" value="crano" class="input-hidden"/><label for="normal"><img src="buttons/11.png"></label>
+	<input type="radio" name="bedtime" id="colleg" value="fiery" class="input-hidden"/><label for="colleg"><img src="buttons/10-2.png"></label>
+	<input type="radio" name="bedtime" id="lazyyy" value="pinkp" class="input-hidden"/><label for="lazyyy"><img src="buttons/always.png"></label>
 	
 	
 	<p>Morning person or night owl?</p>
-	<label><input type="radio" name="activityLevel" id="boring" value="blueb" />Morning</label>
-	<label><input type="radio" name="activityLevel" id="nobore" value="chive" />Night</label>
-	<label><input type="radio" name="activityLevel" id="nobore" value="pinkp" />Doesn't want to be awake ever</label>
-	<label><input type="radio" name="activityLevel" id="nobore" value="fiery" />Always Awake</label>
+	<label><input type="radio" name="activityLevel" id="boring" value="plain" />Morning</label>
+	<label><input type="radio" name="activityLevel" id="nobore" value="fiery" />Night</label>
+	<label><input type="radio" name="activityLevel" id="nobore" value="choco chive" />Doesn't want to be awake ever</label>
+	<label><input type="radio" name="activityLevel" id="nobore" value="calab pinkp" />Always Awake</label>
 
 	
 	<p>What is your spirit vegetable?</p>
-	<label><input type="radio" name="spirit" id="rock2" value="fiery" />Brussel Sprout</label>
+	<label><input type="radio" name="spirit" id="rock2" value="calab" />Brussel Sprout</label>
 	<label><input type="radio" name="spirit" id="indie" value="blueb" />Carrot</label>
-	<label><input type="radio" name="spirit" id="country" value="pinkp" />Tomato</label>
-	<label><input type="radio" name="spirit" id="country" value="chive" />Onion</label>
+	<label><input type="radio" name="spirit" id="country" value="pinkp herbg" />Tomato</label>
+	<label><input type="radio" name="spirit" id="country" value="chive choco fiery" />Onion</label>
 
 
 	<p>When your friend calls you at midnight asking to go on an adventure, what do you say?</p>
-	<label><input type="radio" name="calls" id="rock2" value="blueb" />"No, I've been in bed since 9."</label>
-	<label><input type="radio" name="calls" id="indie" value="chive" />"Gimme 5"</label>
-	<label><input type="radio" name="calls" id="country" value="fiery" />"What time will I be home?"</label>
-	<label><input type="radio" name="calls" id="country" value="pinkp" />"What are we doing?"</label>
+	<label><input type="radio" name="calls" id="rock2" value="plain" />"No, I've been in bed since 9."</label>
+	<label><input type="radio" name="calls" id="indie" value="chive calab" />"Gimme 5"</label>
+	<label><input type="radio" name="calls" id="country" value="fiery blueb crano herbg" />"What time will I be home?"</label>
+	<label><input type="radio" name="calls" id="country" value="pinkp choco" />"What are we doing?"</label>
 
 
 	<p>Now choose an adventure:</p>
-	<label><input type="radio" name="adventure" id="rock2" value="chive" />Literally any</label>
-	<label><input type="radio" name="adventure" id="indie" value="pinkp" />Something with food.</label>
+	<label><input type="radio" name="adventure" id="rock2" value="chive calab" />Literally any</label>
+	<label><input type="radio" name="adventure" id="indie" value="pinkp fiery" />Something with food.</label>
 	<label><input type="radio" name="adventure" id="country" value="fiery" />Sledding down Trowbridge.</label>
-	<label><input type="radio" name="adventure" id="country" value="blueb" />Anything that doesn't involve heights.</label>
+	<label><input type="radio" name="adventure" id="country" value="blueb choco plain" />Anything that doesn't involve heights.</label>
 
 
 	<p>What would you bring to a deserted island?</p>
-	<label><input type="radio" name="tool" id="rock2" value="pinkp" />Bug Spray</label>
-	<label><input type="radio" name="tool" id="indie" value="fiery" />Guitar</label>
-	<label><input type="radio" name="tool" id="country" value="blueb" />A knife</label>
+	<label><input type="radio" name="tool" id="rock2" value="pinkp choco" />Bug Spray</label>
+	<label><input type="radio" name="tool" id="indie" value="fiery crano" />Guitar</label>
+	<label><input type="radio" name="tool" id="country" value="blueb chive" />A knife</label>
 	<label><input type="radio" name="tool" id="country" value="chive" />LOL nothing</label>
 
 
-	<p>You have a big test coming up, and you are not prepared for it, what do you do?</p>
+	<p>You have a big test coming up, and you forgot about it, what do you do?</p>
 	<label><input type="radio" name="study" id="rock2" value="fiery" />Cry</label>
 	<label><input type="radio" name="study" id="indie" value="pinkp" />Cram and hope for the best.</label>
-	<label><input type="radio" name="study" id="country" value="blueb" />Email the Prof.</label>
+	<label><input type="radio" name="study" id="country" value="pl" />Email the Prof.</label>
 	<label><input type="radio" name="study" id="country" value="chive" />Full send!</label>
+	<label><input type="radio" name="study" id="country" value="choco" />I would never...</label>
 
 
 	<p>What's your role in the friend-group?</p>
@@ -193,17 +221,15 @@ margin-top: 30px;
 <button type="submit" value="Submit">Finish Quiz!</button>
 
 </form>
-<p id="answer1"></p>
-<p id="answer2"></p>
-<p id="answer3"></p>
-<p id="answer4"></p>
+
+
 </div>
 
 
 <script>
  
     
-	document.getElementById("form1").onsubmit=function() {
+	document.getElementById("form").onsubmit=function() {
 
 		var checked = document.querySelectorAll('input:checked');
 
@@ -244,14 +270,14 @@ margin-top: 30px;
 	  
 			//function to calculate score for each question, based on value
 			function eachscore(x) {
-				if(x == "plain") { plain+=1}
+				if(x == "plain") { plain+=2}
 				if(x == "blueb") { blueb+=1}
 				if(x == "choco") { choco+=1}
 				if(x == "smoke") { smoke+=1}
 				if(x == "fiery") { fiery+=1}
 				if(x == "crano") { crano+=1}
 				if(x == "herbg") { herbg+=1}
-				if(x == "chive") { chive+=1}
+				if(x == "chive") { chive+=2}
 				if(x == "calab") { calab+=1}
 				if(x == "pinkp") { pinkp+=1}
 
