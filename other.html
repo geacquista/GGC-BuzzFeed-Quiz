@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>order@gompei.com</title>
+
+        <style>
+        input[type=radio] {
+            display: none;
+        }
+
+        input:checked + label img {
+            border:2px solid #00f;
+        }
+        </style>
+    </head>
+
+    <body>
+        <div id="header"><h1>Which Gompei's Goat Cheese Flavor Are You??</h1></div>
+
+        <form id="form">
+
+            <p>When do you find yourself in bed?</p>
+            <input name="image-pick" value="1" type="radio" id="one">
+                <label for="one"><img src="1/9.png"></label>
+            <input name="image-pick" value="2" type="radio" id="two">
+                <label for="two"><img src="1/11.png"></label>     
+            <input name="image-pick" value="3" type="radio" id="three">
+                <label for="three"><img src="1/10-2.png"></label>
+            <input name="image-pick" value="4"  type="radio" id="four">
+                <label for="four"><img src="1/always.png"></label>
+
+            <p>If you HAD to take a bath in one of these, it would be...</p>
+            <input name="image-pick" value="1" type="radio" id="five">
+                <label for="five"><img src="2/chicknood.png"></label>
+            <input name="image-pick" value="2" type="radio" id="six">
+                <label for="six"><img src="2/juice.png"></label>     
+            <input name="image-pick" value="3" type="radio" id="seven">
+                <label for="seven"><img src="2/maccheese.png"></label>
+            <input name="image-pick" value="4"  type="radio" id="eight">
+                <label for="eight"><img src="2/juice.png"></label>
+
+
+        <button type="submit" value="Submit">Finish Quiz!</button>
+
+        </form>
+
+        <h2 id="selected"></h2>
+        
+        <script>
+        document.getElementById("form").onchange = function() {
+            result = document.querySelector('input[name = "image-pick"]:checked').value;
+            document.getElementById("selected").innerHTML = "Cat: " + result;
+        }
+        </script>
+    </body>
+</html>
