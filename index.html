@@ -12,6 +12,7 @@
 body {
 background-color:#ffffff;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+align-items: center;
 }
 
 #main {
@@ -85,53 +86,54 @@ margin-top: 30px;
 	
 	
 	<p>If you HAD to take a bath in one of these, it would be...</p>
-	<label></label><input type="radio" name="activityLevel" id="boring" value="plain" />Morning</label>
-	<label><input type="radio" name="activityLevel" id="nobore" value="fiery" />Night</label>
-	<label><input type="radio" name="activityLevel" id="nobore" value="choco chive" />Doesn't want to be awake ever</label>
-	<label><input type="radio" name="activityLevel" id="nobore" value="calab pinkp" />Always Awake</label>
+	<label for="boring"><input type="radio" name="activityLevel" id="boring" value="plain" class="input-hidden"/><img src="2/chicknood.png"></label>
+	<label for="nobore"><input type="radio" name="activityLevel" id="nobore" value="fiery" class="input-hidden"/><img src="2/juice.png">t</label>
+	<label for="nobore"><input type="radio" name="activityLevel" id="nobore" value="choco chive" class="input-hidden"/><img src="2/maccheese.png"></label>
+	<label for="nobore"><input type="radio" name="activityLevel" id="nobore" value="calab pinkp" class="input-hidden"/><img src="2/meatball.png"></label>
 
 	
 	<p>What is your spirit vegetable?</p>
-	<label><input type="radio" name="spirit" id="rock2" value="calab" />Brussel Sprout</label>
-	<label><input type="radio" name="spirit" id="indie" value="blueb" />Carrot</label>
-	<label><input type="radio" name="spirit" id="country" value="pinkp herbg" />Tomato</label>
-	<label><input type="radio" name="spirit" id="country" value="chive choco fiery" />Onion</label>
+	<label for="rock2"><input type="radio" name="spirit" id="rock2" value="calab" class="input-hidden"/><img src="3/brussel.png"></label>
+	<label for="indie"><input type="radio" name="spirit" id="indie" value="blueb" class="input-hidden"/><img src="3/carrot.png"></label>
+	<label for="country"><input type="radio" name="spirit" id="country" value="pinkp herbg" class="input-hidden"/><img src="3/onion.png"></label>
+	<label for="country"><input type="radio" name="spirit" id="country" value="chive choco fiery" class="input-hidden"/><img src="3/tomahto.png"></label>
 
 
-	<p>When your friend calls you at midnight asking to go on an adventure, what do you say?</p>
-	<label><input type="radio" name="calls" id="rock2" value="plain" />"No, I've been in bed since 9."</label>
-	<label><input type="radio" name="calls" id="indie" value="chive calab" />"Gimme 5"</label>
-	<label><input type="radio" name="calls" id="country" value="fiery blueb crano herbg" />"What time will I be home?"</label>
-	<label><input type="radio" name="calls" id="country" value="pinkp choco" />"What are we doing?"</label>
+	<p>Pick your fighter:</p>
+	<label for="rock2"><input type="radio" name="calls" id="rock2" value="plain" class="input-hidden"/><img src="4/bowser.png"></label>
+	<label for="indie"><input type="radio" name="calls" id="indie" value="chive calab" class="input-hidden"/><img src="4/kirby.png"></label>
+	<label for="country"><input type="radio" name="calls" id="country" value="fiery blueb crano herbg" class="input-hidden"/><img src="4/mario.png"></label>
+	<label for="country"><input type="radio" name="calls" id="country" value="pinkp choco" class="input-hidden"/><img src="4/peach.png"></label>
 
 
 	<p>Now choose an adventure:</p>
-	<label><input type="radio" name="adventure" id="rock2" value="chive calab" />Literally any</label>
-	<label><input type="radio" name="adventure" id="indie" value="pinkp fiery" />Something with food.</label>
-	<label><input type="radio" name="adventure" id="country" value="fiery" />Sledding down Trowbridge.</label>
-	<label><input type="radio" name="adventure" id="country" value="blueb choco plain" />Anything that doesn't involve heights.</label>
+	<label for="rock2"><input type="radio" name="adventure" id="rock2" value="chive calab" class="input-hidden"/><img src="5/any.png"></label>
+	<label for="indie"><input type="radio" name="adventure" id="indie" value="pinkp fiery" class="input-hidden"/><img src="5/food.png"></label>
+	<label for="country"><input type="radio" name="adventure" id="country" value="fiery" class="input-hidden"/><img src="5/heights.png"></label>
+	<label for="country"><input type="radio" name="adventure" id="country" value="blueb choco plain" class="input-hidden"/><img src="5/sledding.png"></label>
 
 
 	<p>What would you bring to a deserted island?</p>
-	<label><input type="radio" name="tool" id="rock2" value="pinkp choco" />Bug Spray</label>
-	<label><input type="radio" name="tool" id="indie" value="fiery crano" />Guitar</label>
-	<label><input type="radio" name="tool" id="country" value="blueb chive" />A knife</label>
-	<label><input type="radio" name="tool" id="country" value="chive" />LOL nothing</label>
+	<label><input type="radio" name="tool" id="rock2" value="pinkp choco" /><img src="6/Bugspray.png"></label>
+	<label><input type="radio" name="tool" id="indie" value="fiery crano" /><img src="6/Guitar.png"></label>
+	<label><input type="radio" name="tool" id="country" value="blueb chive" /><img src="6/Knife.png"></label>
+	<label><input type="radio" name="tool" id="country" value="chive" /><img src="6/Nothing.png"></label>
 
 
 	<p>You have a big test coming up, and you forgot about it, what do you do?</p>
-	<label><input type="radio" name="study" id="rock2" value="fiery" />Cry</label>
-	<label><input type="radio" name="study" id="indie" value="pinkp" />Cram and hope for the best.</label>
-	<label><input type="radio" name="study" id="country" value="pl" />Email the Prof.</label>
-	<label><input type="radio" name="study" id="country" value="chive" />Full send!</label>
-	<label><input type="radio" name="study" id="country" value="choco" />I would never...</label>
+	<label><input type="radio" name="study" id="rock2" value="fiery" /><img src="7/Cry.png"></label>
+	<label><input type="radio" name="study" id="indie" value="pinkp" /><img src="7/Cram.png"></label>
+	<label><input type="radio" name="study" id="country" value="pl" /><img src="7/EmailProf.png"></label>
+	<label><input type="radio" name="study" id="country" value="chive" /><img src="7/FullSend.png"></label>
+	<label><input type="radio" name="study" id="country" value="choco" /><img src="7/IWouldNever.png"></label>
 
 
 	<p>What's your role in the friend-group?</p>
-	<label><input type="radio" name="squad" id="rock2" value="pinkp" />Always rambling on</label>
-	<label><input type="radio" name="squad" id="indie" value="fiery" />The mom</label>
-	<label><input type="radio" name="squad" id="country" value="chive" />Straight up vibing</label>
-	<label><input type="radio" name="squad" id="country" value="blueb" />Haha what friend group</label>
+	<label><input type="radio" name="squad" id="rock2" value="pinkp" /><img src="8/AlwaysTalking.png"></label>
+	<label><input type="radio" name="squad" id="indie" value="fiery" /><img src="8/NoFriends.png"></label>
+	<label><input type="radio" name="squad" id="country" value="chive" /><img src="8/AlwaysVibing.png"></label>
+	<label><input type="radio" name="squad" id="country" value="blueb" /><img src="8/TheMom.png"></label>
+	<label><input type="radio" name="squad" id="country" value="blueb" /><img src="8/Klepto.png"></label>
 
 
 	<p>What's your role in a group project?</p>
@@ -142,10 +144,10 @@ margin-top: 30px;
 
 
 	<p>If your friend was feeling sad, what would you do?</p>
-	<label><input type="radio" name="friend" id="rock2" value="pinkp" />Buy them Dunkies</label>
-	<label><input type="radio" name="friend" id="indie" value="fiery" />Cry with them</label>
-	<label><input type="radio" name="friend" id="country" value="chive" />Do nothing because you are uncomfy, but awkwardly stand there and say it'll be ok</label>
-	<label><input type="radio" name="friend" id="country" value="blueb" />Tell them to get over it!</label>
+	<label><input type="radio" name="friend" id="rock2" value="pinkp" /><img src="10/Buy Dunks.png"></label>
+	<label><input type="radio" name="friend" id="indie" value="fiery" /><img src="10/CryTogether.png"></label>
+	<label><input type="radio" name="friend" id="country" value="chive" /><img src="10/Nothing.png"></label>
+	<label><input type="radio" name="friend" id="country" value="blueb" /><img src="10/Nothing.png"></label>
 
 
 	<p>What did you wanna be when you grew up?</p>
@@ -184,38 +186,38 @@ margin-top: 30px;
 
 
 	<p>Which Hogwart's House?</p>
-	<label><input type="radio" name="harry" id="rock2" value="pinkp" />Gryffindor</label>
-	<label><input type="radio" name="harry" id="indie" value="chive" />Ravenclaw</label>
-	<label><input type="radio" name="harry" id="country" value="blueb" />Hufflepuff</label>
-	<label><input type="radio" name="harry" id="country" value="fiery" />Slytherin</label>
+	<label><input type="radio" name="harry" id="rock2" value="pinkp" /><img src="16/button16-20_assets_gryffindor.png"></label>
+	<label><input type="radio" name="harry" id="indie" value="chive" /><img src="16/button16-20_assets_ravenclaw.png"></label>
+	<label><input type="radio" name="harry" id="country" value="blueb" /><img src="16/button16-20_assets_hufflepuff.png"></label>
+	<label><input type="radio" name="harry" id="country" value="fiery" /><img src="16/button16-20_assets_slytherin.png"></label>
 
 
 	<p>CHOOSE ONE: </p>
-	<label><input type="radio" name="danny" id="rock2" value="fiery" />Danny BurRito</label>
-	<label><input type="radio" name="danny" id="indie" value="chive" />Danny DeCheeto</label>
-	<label><input type="radio" name="danny" id="country" value="pinkp" />Danny DoRito</label>
-	<label><input type="radio" name="danny" id="country" value="blueb" />Danny DeBeeto</label>
+	<label><input type="radio" name="danny" id="rock2" value="fiery" /><img src="17/button16-20_assets_dannyBurrito.png"></label>
+	<label><input type="radio" name="danny" id="indie" value="chive" /><img src="17/button16-20_assets_dannyDeCheeto.png"></label>
+	<label><input type="radio" name="danny" id="country" value="pinkp" /><img src="17/button16-20_assets_dannyDorito.png"></label>
+	<label><input type="radio" name="danny" id="country" value="blueb" /><img src="17/button16-20_assets_dannyDeBeeto.png"></label>
 
 
 	<p>What is the best style of potato?</p>
-	<label><input type="radio" name="cook" id="rock2" value="blueb" />Mashed</label>
-	<label><input type="radio" name="cook" id="indie" value="chive" />Smashed</label>
-	<label><input type="radio" name="cook" id="country" value="willie" />Baked</label>
-	<label><input type="radio" name="cook" id="country" value="chive" />Any form as long as the potato is ~sweet~</label>
+	<label><input type="radio" name="cook" id="rock2" value="blueb" /><img src="18/button16-20_assets_mashed.png"></label>
+	<label><input type="radio" name="cook" id="indie" value="chive" /><img src="18/button16-20_assets_smashed.png"></label>
+	<label><input type="radio" name="cook" id="country" value="willie" /><img src="18/button16-20_assets_baked.png"></label>
+	<label><input type="radio" name="cook" id="country" value="chive" /><img src="18/button16-20_assets_anySweet.png"></label>
 
 
 	<p>The most immaculate ice cream topping: </p>
-	<label><input type="radio" name="toppi" id="rock2" value="fiery" />Sprinkles, rainbow</label>
-	<label><input type="radio" name="toppi" id="indie" value="blueb" />CHOCO CHIPPIES</label>
-	<label><input type="radio" name="toppi" id="country" value="chive" />Oreo</label>
-	<label><input type="radio" name="toppi" id="country" value="pinkp" />Something different every time, M&Ms, maybe hot fudge, some caramel too??</label>
+	<label><input type="radio" name="toppi" id="rock2" value="fiery" /><img src="19/button16-20_assets_rainbowSprinkles.png"></label>
+	<label><input type="radio" name="toppi" id="indie" value="blueb" /><img src="19/button16-20_assets_chocoChippies.png"></label>
+	<label><input type="radio" name="toppi" id="country" value="chive" /><img src="19/button16-20_assets_oreo.png"></label>
+	<label><input type="radio" name="toppi" id="country" value="pinkp" /><img src="19/button16-20_assets_differentEveryTime.png"></label>
 
 
 	<p>"Chive ________" </p>
-	<label><input type="radio" name="fucks" id="rock2" value="fiery" />Slaps</label>
-	<label><input type="radio" name="fucks" id="indie" value="blueb" />is a flavor I have not tried.</label>
-	<label><input type="radio" name="fucks" id="country" value="pinkp" />is not that good.</label>
-	<label><input type="radio" name="fucks" id="country" value="chive" />*Employee use only.*</label>
+	<label><input type="radio" name="fucks" id="rock2" value="fiery" /><img src="20/button16-20_assets_slaps.png"></label>
+	<label><input type="radio" name="fucks" id="indie" value="blueb" /><img src="20/button16-20_assets_haventTried.png"></label>
+	<label><input type="radio" name="fucks" id="country" value="pinkp" /><img src="20/button16-20_assets_notGood.png"></label>
+	<label><input type="radio" name="fucks" id="country" value="chive" /><img src="20/button16-20_assets_employeesOnly.png"></label>
 
 
 <button type="submit" value="Submit">Finish Quiz!</button>
