@@ -1,6 +1,6 @@
 body {
 background-color:#ffffff;
-background: url('back.PNG') repeat-y center center fixed;
+background: url('back.png') repeat-y center center fixed;
 background-size: cover;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 align-items: center;
@@ -12,15 +12,15 @@ padding: 10px;
 }
 
 #header {
-padding-left: 30px;
-padding-top: 10px;
+padding-left: 50px;
+padding-top: 25px;
 margin-top: 10px;
 margin-right: 10px;
 
 
 background-color: whitesmoke;
 text-align: center;
-font-size: 30px;
+font-size: 20px;
 
 color: crimson;
 height: 150px;
