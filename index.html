@@ -1,228 +1,244 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>order@gompei.com</title>
-
-<style>
-
-
-
-
-
-body {
-background-color:#ffffff;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-align-items: center;
-}
-
-#main {
-width: 90%;
-border: 3px rgb(255, 255, 255);
-margin: auto;
-padding: 10px;
-background-color: #ffffff;
-}
-
-#header {
-margin-top: 5;
-padding: 5px;
-text-align: center;
-height: 100px;
-}
-
-p {
-font-size: larger;
-text-align: center;
-}
-
-label {
-width: 300px;
-display: auto ;
-} 
-
-.input-hidden {
-  position: absolute;
-  left: -9999px;
-}
-
-input[type=radio]:checked + label>img {
-  border: 1px solid #fff;
-  box-shadow: 0 0 3px 3px rgb(245, 219, 255);
-}
-
-input[type=radio] + label>img {
-  border: 1px solid #444;
-  width: 150px;
-  height: 150px;
-  transition: 500ms all;
-}
-
-input[type=radio]:checked + label>img {
-  transform: 
-    rotateZ(-10deg) 
-    rotateX(10deg);
-}
-
-button {
-display: block;
-margin-top: 30px;
-}
-
-</style>
+	<title>order@gompei.com</title>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
 <div id="main">
 <div id="header"><h1>Which Gompei's Goat Cheese Flavor Are You??</h1></div>
 
-<form  id="form">
+	<form  id="form">
+
+		<p>When do you find yourself in bed?</p>
+		<input type="radio" name="bedtime" id="boring" value="plain blueb" class="input-hidden"/>
+			<label for="boring"><img src="1/9.png"></label>
+		<input type="radio" name="bedtime" id="normal" value="crano" class="input-hidden"/>
+			<label for="normal"><img src="1/11.png"></label>
+		<input type="radio" name="bedtime" id="colleg" value="fiery" class="input-hidden"/>
+			<label for="colleg"><img src="1/10-2.png"></label>
+		<input type="radio" name="bedtime" id="lazyyy" value="pinkp" class="input-hidden"/>
+			<label for="lazyyy"><img src="1/always.png"></label>
+		
+		
+		<p>If you HAD to take a bath in one of these, it would be...</p>
+		<input type="radio" name="activityLevel" id="basic" value="plain" class="input-hidden"/>
+			<label for="basic"><img src="2/chicknood.png"></label>
+		<input type="radio" name="activityLevel" id="ouch" value="fiery" class="input-hidden"/>
+			<label for="ouch"><img src="2/juice.png"></label>
+		<input type="radio" name="activityLevel" id="weird" value="choco chive" class="input-hidden"/>
+			<label for="weird"><img src="2/maccheese.png"></label>
+		<input type="radio" name="activityLevel" id="omg" value="calab pinkp" class="input-hidden"/>
+			<label for="omg"><img src="2/meatball.png"></label>
+
+		
+		<p>What is your spirit vegetable?</p>
+		<input type="radio" name="spirit" id="unique" value="calab" class="input-hidden"/>
+			<label for="unique"><img src="3/brussel.png"></label>
+		<input type="radio" name="spirit" id="bore" value="blueb" class="input-hidden"/>
+			<label for="bore"><img src="3/carrot.png"></label>
+		<input type="radio" name="spirit" id="layer" value="pinkp herbg" class="input-hidden"/>
+			<label for="layer"><img src="3/onion.png"></label>
+		<input type="radio" name="spirit" id="tomato" value="chive choco fiery" class="input-hidden"/>
+			<label for="tomato"><img src="3/tomahto.png"></label>
 
 
-	<p>When do you find yourself in bed?</p>
-	<input type="radio" name="bedtime" id="boring" value="plain blueb" class="input-hidden"/><label for="boring"><img src="1/9.png"></label>
-	<input type="radio" name="bedtime" id="normal" value="crano" class="input-hidden"/><label for="normal"><img src="1/11.png"></label>
-	<input type="radio" name="bedtime" id="colleg" value="fiery" class="input-hidden"/><label for="colleg"><img src="1/10-2.png"></label>
-	<input type="radio" name="bedtime" id="lazyyy" value="pinkp" class="input-hidden"/><label for="lazyyy"><img src="1/always.png"></label>
-	
-	
-	<p>If you HAD to take a bath in one of these, it would be...</p>
-	<label for="boring"><input type="radio" name="activityLevel" id="boring" value="plain" class="input-hidden"/><img src="2/chicknood.png"></label>
-	<label for="nobore"><input type="radio" name="activityLevel" id="nobore" value="fiery" class="input-hidden"/><img src="2/juice.png">t</label>
-	<label for="nobore"><input type="radio" name="activityLevel" id="nobore" value="choco chive" class="input-hidden"/><img src="2/maccheese.png"></label>
-	<label for="nobore"><input type="radio" name="activityLevel" id="nobore" value="calab pinkp" class="input-hidden"/><img src="2/meatball.png"></label>
-
-	
-	<p>What is your spirit vegetable?</p>
-	<label for="rock2"><input type="radio" name="spirit" id="rock2" value="calab" class="input-hidden"/><img src="3/brussel.png"></label>
-	<label for="indie"><input type="radio" name="spirit" id="indie" value="blueb" class="input-hidden"/><img src="3/carrot.png"></label>
-	<label for="country"><input type="radio" name="spirit" id="country" value="pinkp herbg" class="input-hidden"/><img src="3/onion.png"></label>
-	<label for="country"><input type="radio" name="spirit" id="country" value="chive choco fiery" class="input-hidden"/><img src="3/tomahto.png"></label>
+		<p>Pick your fighter:</p>
+		<input type="radio" name="calls" id="strong" value="plain" class="input-hidden"/>
+			<label for="strong"><img src="4/bowser.png"></label>
+		<input type="radio" name="calls" id="easy" value="chive calab" class="input-hidden"/>
+			<label for="easy"><img src="4/kirby.png"></label>
+		<input type="radio" name="calls" id="typical" value="fiery blueb crano herbg" class="input-hidden"/>
+			<label for="typical"><img src="4/mario.png"></label>
+		<input type="radio" name="calls" id="soft" value="pinkp choco" class="input-hidden"/>
+			<label for="soft"><img src="4/peach.png"></label>
 
 
-	<p>Pick your fighter:</p>
-	<label for="rock2"><input type="radio" name="calls" id="rock2" value="plain" class="input-hidden"/><img src="4/bowser.png"></label>
-	<label for="indie"><input type="radio" name="calls" id="indie" value="chive calab" class="input-hidden"/><img src="4/kirby.png"></label>
-	<label for="country"><input type="radio" name="calls" id="country" value="fiery blueb crano herbg" class="input-hidden"/><img src="4/mario.png"></label>
-	<label for="country"><input type="radio" name="calls" id="country" value="pinkp choco" class="input-hidden"/><img src="4/peach.png"></label>
+		<p>Now choose an adventure:</p>
+		<input type="radio" name="adventure" id="crazy" value="chive calab" class="input-hidden"/>
+			<label for="crazy"><img src="5/any.png"></label>
+		<input type="radio" name="adventure" id="hungry" value="pinkp fiery" class="input-hidden"/>
+			<label for="hungry"><img src="5/food.png"></label>
+		<input type="radio" name="adventure" id="scared" value="fiery" class="input-hidden"/>
+			<label for="scared"><img src="5/heights.png"></label>
+		<input type="radio" name="adventure" id="YAS" value="blueb choco plain" class="input-hidden"/>
+			<label for="YAS"><img src="5/sledding.png"></label>
 
 
-	<p>Now choose an adventure:</p>
-	<label for="rock2"><input type="radio" name="adventure" id="rock2" value="chive calab" class="input-hidden"/><img src="5/any.png"></label>
-	<label for="indie"><input type="radio" name="adventure" id="indie" value="pinkp fiery" class="input-hidden"/><img src="5/food.png"></label>
-	<label for="country"><input type="radio" name="adventure" id="country" value="fiery" class="input-hidden"/><img src="5/heights.png"></label>
-	<label for="country"><input type="radio" name="adventure" id="country" value="blueb choco plain" class="input-hidden"/><img src="5/sledding.png"></label>
+		<p>What would you bring to a deserted island?</p>
+		<input type="radio" name="tool" id="rock2" value="pinkp choco" class="input-hidden"/>
+			<label for="rock2"><img src="6/Bugspray.png"></label>
+		<input type="radio" name="tool" id="indie" value="fiery crano" class="input-hidden"/>
+			<label for="indie"><img src="6/Guitar.png"></label>
+		<input type="radio" name="tool" id="country" value="blueb chive" class="input-hidden"/>
+			<label for="country"><img src="6/Knife.png"></label>
+		<input type="radio" name="tool" id="country" value="chive" class="input-hidden"/>
+			<label for="country"><img src="6/Nothing.png"></label>
 
 
-	<p>What would you bring to a deserted island?</p>
-	<label><input type="radio" name="tool" id="rock2" value="pinkp choco" /><img src="6/Bugspray.png"></label>
-	<label><input type="radio" name="tool" id="indie" value="fiery crano" /><img src="6/Guitar.png"></label>
-	<label><input type="radio" name="tool" id="country" value="blueb chive" /><img src="6/Knife.png"></label>
-	<label><input type="radio" name="tool" id="country" value="chive" /><img src="6/Nothing.png"></label>
+		<p>You have a big test coming up, and you forgot about it, what do you do?</p>
+		<input type="radio" name="study" id="rock2" value="fiery" class="input-hidden"/>
+			<label for="rock2"><img src="7/Cry.png"></label>
+		<input type="radio" name="study" id="indie" value="pinkp" class="input-hidden"/>
+			<label for="indie"><img src="7/Cram.png"></label>
+		<input type="radio" name="study" id="country" value="pl" class="input-hidden"/>
+			<label for="country"><img src="7/EmailProf.png"></label>
+		<input type="radio" name="study" id="country" value="chive" class="input-hidden"/>
+			<label for="country"><img src="7/FullSend.png"></label>
 
 
-	<p>You have a big test coming up, and you forgot about it, what do you do?</p>
-	<label><input type="radio" name="study" id="rock2" value="fiery" /><img src="7/Cry.png"></label>
-	<label><input type="radio" name="study" id="indie" value="pinkp" /><img src="7/Cram.png"></label>
-	<label><input type="radio" name="study" id="country" value="pl" /><img src="7/EmailProf.png"></label>
-	<label><input type="radio" name="study" id="country" value="chive" /><img src="7/FullSend.png"></label>
-	<label><input type="radio" name="study" id="country" value="choco" /><img src="7/IWouldNever.png"></label>
+		<p>What's your role in the friend-group?</p>
+		<input type="radio" name="squad" id="rock2" value="pinkp" class="input-hidden"/>
+			<label for="rock2"><img src="8/AlwaysTalking.png"></label>
+		<input type="radio" name="squad" id="indie" value="fiery" class="input-hidden"/>
+			<label for="indie"><img src="8/NoFriends.png"></label>
+		<input type="radio" name="squad" id="country" value="chive" class="input-hidden"/>
+			<label for="country"><img src="8/AlwaysVibing.png"></label>
+		<input type="radio" name="squad" id="country" value="blueb" class="input-hidden"/>
+			<label for="country"><img src="8/TheMom.png"></label>
+		<input type="radio" name="squad" id="country" value="blueb" class="input-hidden"/>
+			<label for="country"><img src="8/Klepto.png"></label>
 
 
-	<p>What's your role in the friend-group?</p>
-	<label><input type="radio" name="squad" id="rock2" value="pinkp" /><img src="8/AlwaysTalking.png"></label>
-	<label><input type="radio" name="squad" id="indie" value="fiery" /><img src="8/NoFriends.png"></label>
-	<label><input type="radio" name="squad" id="country" value="chive" /><img src="8/AlwaysVibing.png"></label>
-	<label><input type="radio" name="squad" id="country" value="blueb" /><img src="8/TheMom.png"></label>
-	<label><input type="radio" name="squad" id="country" value="blueb" /><img src="8/Klepto.png"></label>
+		<p>What's your role in a group project?</p>
+		<input type="radio" name="group" id="rock2" value="fiery" class="input-hidden"/>
+			<label for="rock2"><img src="9/THELEADER.png"></label>
+		<input type="radio" name="group" id="indie" value="chive" class="input-hidden"/>
+			<label for="indie"><img src="9/THELEADER.png"></label>
+		<input type="radio" name="group" id="country" value="pinkp" class="input-hidden"/>
+			<label for="country"><img src="9/THELEADER.png"></label>
+		<input type="radio" name="group" id="country" value="blueb" class="input-hidden"/>
+			<label for="country"><img src="9/THELEADER.png"></label>
 
 
-	<p>What's your role in a group project?</p>
-	<label><input type="radio" name="group" id="rock2" value="fiery" />Easy, the leader</label>
-	<label><input type="radio" name="group" id="indie" value="chive" />The slacker</label>
-	<label><input type="radio" name="group" id="country" value="pinkp" />The leader only if nobody else steps up</label>
-	<label><input type="radio" name="group" id="country" value="blueb" />Will do all the work alone to avoid confrontation</label>
+		<p>If your friend was feeling sad, what would you do?</p>
+		<input type="radio" name="friend" id="rock2" value="pinkp" class="input-hidden"/>
+			<label for="rock2"><img src="10/Buy Dunks.png"></label>
+		<input type="radio" name="friend" id="indie" value="fiery" class="input-hidden"/>
+			<label for="indie"><img src="10/CryTogether.png"></label>
+		<input type="radio" name="friend" id="country" value="chive" class="input-hidden"/>
+			<label for="country"><img src="10/Nothing.png"></label>
+		<input type="radio" name="friend" id="country" value="blueb" class="input-hidden"/>
+			<label for="country"><img src="10/Nothing.png"></label>
 
 
-	<p>If your friend was feeling sad, what would you do?</p>
-	<label><input type="radio" name="friend" id="rock2" value="pinkp" /><img src="10/Buy Dunks.png"></label>
-	<label><input type="radio" name="friend" id="indie" value="fiery" /><img src="10/CryTogether.png"></label>
-	<label><input type="radio" name="friend" id="country" value="chive" /><img src="10/Nothing.png"></label>
-	<label><input type="radio" name="friend" id="country" value="blueb" /><img src="10/Nothing.png"></label>
+		<p>What did you wanna be when you grew up?</p>
+		<input type="radio" name="grown" id="indie" value="chive" class="input-hidden"/>
+			<label for="indie"><img src="11/President.png"></label>
+		<input type="radio" name="grown" id="country" value="blueb" class="input-hidden"/>
+			<label for="indie"><img src="11/Adoctor.png"></label>
+		<input type="radio" name="grown" id="country" value="pinkp" class="input-hidden"/>
+			<label for="indie"><img src="11/ParentOfLike6-7Kids.png"></label>
+		<input type="radio" name="grown" id="country" value="fiery" class="input-hidden"/>
+			<label for="indie"><img src="11/HannahMontana.png"></label>
 
 
-	<p>What did you wanna be when you grew up?</p>
-	<label><input type="radio" name="grown" id="indie" value="chive" />President</label>
-	<label><input type="radio" name="grown" id="country" value="blueb" />A Doctor</label>
-	<label><input type="radio" name="grown" id="country" value="pinkp" />Parent of like, 6 or 7 kids</label>
-	<label><input type="radio" name="grown" id="country" value="fiery" />Hannah Montana</label>
+		<p>When you listen to music, you normally put on... </p>
+		<input type="radio" name="music" id="rock2" value="fiery" class="input-hidden"/>
+			<label for="indie"><img src="12/IHaveVerySpecificPlaylistsForEveryMood.png"></label>
+		<input type="radio" name="music" id="indie" value="pinkp" class="input-hidden"/>
+			<label for="indie"><img src="12/ILiterallyListentoTheSameThingEverytimeIPlayMusic.png"></label>
+		<input type="radio" name="music" id="country" value="chive" class="input-hidden"/>
+			<label for="indie"><img src="12/ARandomAssortmentOfSongsIEnjoy.png"></label>
+		<input type="radio" name="music" id="country" value="blueb" class="input-hidden"/>
+			<label for="indie"><img src="12/MyFavoriteGenre.png"></label>
 
 
-	<p>When you listen to music, you normally put on... </p>
-	<label><input type="radio" name="music" id="rock2" value="fiery" />I have very specific playlists for every mood.</label>
-	<label><input type="radio" name="music" id="indie" value="pinkp" />I literally listen to the same thing every time I play music.</label>
-	<label><input type="radio" name="music" id="country" value="chive" />A random assortment of songs I enjoy.</label>
-	<label><input type="radio" name="music" id="country" value="blueb" />My favorite genre</label>
+		<p>What is your go-to fast food chain?</p>
+		<input type="radio" name="chain" id="rock2" value="blueb" class="input-hidden"/>
+			<label for="indie"><img src="13/Chi-Fli-A.png"></label>
+		<input type="radio" name="chain" id="indie" value="pinkp" class="input-hidden"/>
+			<label for="indie">	<img src="13/McDonalds.png"></label>
+		<input type="radio" name="chain" id="country" value="chive" class="input-hidden"/>
+			<label for="indie">	<img src="13/Wendys.png"></label>
+		<input type="radio" name="chain" id="country" value="fiery" class="input-hidden"/>
+			<label for="indie"><img src="13/ImAtTheCombinationKFCAndTacoBellOfWorcester.png"></label>
 
 
-	<p>What is your go-to fast food chain?</p>
-	<label><input type="radio" name="chain" id="rock2" value="blueb" />Chi-Fil-A</label>
-	<label><input type="radio" name="chain" id="indie" value="pinkp" />McDonald's</label>
-	<label><input type="radio" name="chain" id="country" value="chive" />Wendy's</label>
-	<label><input type="radio" name="chain" id="country" value="fiery" />I'M AT THE COMBINATION KFC AND TACO BELL</label>
+		<p>Choose one for the rest of your life:</p>
+		<input type="radio" name="spice" id="rock2" value="blueb" class="input-hidden"/>
+			<label for="indie">	<img src="14/Sweet.png"></label>
+		<input type="radio" name="spice" id="indie" value="pinkp" class="input-hidden"/>
+			<label for="indie"><img src="14/Salty.png"></label>
+		<input type="radio" name="spice" id="country" value="chive" class="input-hidden"/>
+			<label for="indie">	<img src="14/Sour.png"></label>
+		<input type="radio" name="spice" id="country" value="fiery" class="input-hidden"/>
+			<label for="indie">	<img src="14/SpiZy.png"></label>
 
 
-	<p>Choose one for the rest of your life:</p>
-	<label><input type="radio" name="spice" id="rock2" value="blueb" />Sweet</label>
-	<label><input type="radio" name="spice" id="indie" value="pinkp" />Salty</label>
-	<label><input type="radio" name="spice" id="country" value="chive" />Sour</label>
-	<label><input type="radio" name="spice" id="country" value="fiery" />SpiZy</label>
+		<p>How do you eat mac and cheese?</p>
+		<input type="radio" name="cheese" id="rock2" value="blueb" class="input-hidden"/>
+			<label for="indie">	<img src="15/TypicalSpoon.png"></label>
+		<input type="radio" name="cheese" id="indie" value="pinkp" class="input-hidden"/>
+			<label for="indie">	<img src="15/AverageFork.png"></label>
+		<input type="radio" name="cheese" id="country" value="chive" class="input-hidden"/>
+			<label for="indie">	<img src="15/UsingWhateverIsNotInThePileOfDirtyDishes.png"></label>
+		<input type="radio" name="cheese" id="country" value="fiery" class="input-hidden"/>
+			<label for="indie"><img src="15/IdEatItOutOfThePotWithTheWoodenSpoonICookedWith.png"></label>
 
 
-	<p>How do you eat mac and cheese?</p>
-	<label><input type="radio" name="cheese" id="rock2" value="blueb" />Typical Spoon</label>
-	<label><input type="radio" name="cheese" id="indie" value="pinkp" />Average Fork</label>
-	<label><input type="radio" name="cheese" id="country" value="chive" />Using whatever is not in the pile of dirty dishes</label>
-	<label><input type="radio" name="cheese" id="country" value="fiery" />I'd eat it out of the pot with the wooden spoon I cooked with.</label>
+		<p>Which Hogwart's House?</p>
+		<input type="radio" name="harry" id="rock2" value="pinkp" class="input-hidden"/>
+			<label for="indie">	<img src="16/button16-20_assets_gryffindor.png"></label>
+		<input type="radio" name="harry" id="indie" value="chive" class="input-hidden"/>
+			<label for="indie">	<img src="16/button16-20_assets_ravenclaw.png"></label>
+		<input type="radio" name="harry" id="country" value="blueb" class="input-hidden"/>
+			<label for="indie"><img src="16/button16-20_assets_hufflepuff.png"></label>
+		<input type="radio" name="harry" id="country" value="fiery" class="input-hidden"/>
+			<label for="yuh"><img src="16/button16-20_assets_slytherin.png"></label>
 
 
-	<p>Which Hogwart's House?</p>
-	<label><input type="radio" name="harry" id="rock2" value="pinkp" /><img src="16/button16-20_assets_gryffindor.png"></label>
-	<label><input type="radio" name="harry" id="indie" value="chive" /><img src="16/button16-20_assets_ravenclaw.png"></label>
-	<label><input type="radio" name="harry" id="country" value="blueb" /><img src="16/button16-20_assets_hufflepuff.png"></label>
-	<label><input type="radio" name="harry" id="country" value="fiery" /><img src="16/button16-20_assets_slytherin.png"></label>
+		<p>CHOOSE ONE: </p>
+		<input type="radio" name="danny" id="rock2" value="fiery" class="input-hidden"/>
+			<label for="indie">	<img src="17/button16-20_assets_dannyBurrito.png"></label>
+		<input type="radio" name="danny" id="indie" value="chive" class="input-hidden"/>
+			<label for="indie">	<img src="17/button16-20_assets_dannyDeCheeto.png"></label>
+		<input type="radio" name="danny" id="country" value="pinkp" class="input-hidden"/>
+			<label for="indie">	<img src="17/button16-20_assets_dannyDorito.png"></label>
+		<input type="radio" name="danny" id="country" value="blueb" class="input-hidden"/>
+			<label for="indie">	<img src="17/button16-20_assets_dannyDeBeeto.png"></label>
 
 
-	<p>CHOOSE ONE: </p>
-	<label><input type="radio" name="danny" id="rock2" value="fiery" /><img src="17/button16-20_assets_dannyBurrito.png"></label>
-	<label><input type="radio" name="danny" id="indie" value="chive" /><img src="17/button16-20_assets_dannyDeCheeto.png"></label>
-	<label><input type="radio" name="danny" id="country" value="pinkp" /><img src="17/button16-20_assets_dannyDorito.png"></label>
-	<label><input type="radio" name="danny" id="country" value="blueb" /><img src="17/button16-20_assets_dannyDeBeeto.png"></label>
+		<p>What is the best style of potato?</p>
+		<input type="radio" name="cook" id="rock2" value="blueb" class="input-hidden"/>
+			<label for="indie">	<img src="18/button16-20_assets_mashed.png"></label>
+		<input type="radio" name="cook" id="indie" value="chive" class="input-hidden"/>
+			<label for="indie">	<img src="18/button16-20_assets_smashed.png"></label>
+		<input type="radio" name="cook" id="country" value="willie" class="input-hidden"/>
+			<label for="indie">	<img src="18/button16-20_assets_baked.png"></label>
+		<input type="radio" name="cook" id="country" value="chive" class="input-hidden"/>
+			<label for="indie">	<img src="18/button16-20_assets_anySweet.png"></label>
 
 
-	<p>What is the best style of potato?</p>
-	<label><input type="radio" name="cook" id="rock2" value="blueb" /><img src="18/button16-20_assets_mashed.png"></label>
-	<label><input type="radio" name="cook" id="indie" value="chive" /><img src="18/button16-20_assets_smashed.png"></label>
-	<label><input type="radio" name="cook" id="country" value="willie" /><img src="18/button16-20_assets_baked.png"></label>
-	<label><input type="radio" name="cook" id="country" value="chive" /><img src="18/button16-20_assets_anySweet.png"></label>
+		<p>The most immaculate ice cream topping: </p>
+		<input type="radio" name="toppi" id="rock2" value="fiery" class="input-hidden"/>
+			<label for="indie">	<img src="19/button16-20_assets_rainbowSprinkles.png"></label>
+		<input type="radio" name="toppi" id="indie" value="blueb" class="input-hidden"/>
+			<label for="indie">	<img src="19/button16-20_assets_chocoChippies.png"></label>
+		<input type="radio" name="toppi" id="country" value="chive" class="input-hidden"/>
+			<label for="indie">	<img src="19/button16-20_assets_oreo.png"></label>
+		<input type="radio" name="toppi" id="country" value="pinkp" class="input-hidden"/>
+			<label for="indie">	<img src="19/button16-20_assets_differentEveryTime.png"></label>
 
 
-	<p>The most immaculate ice cream topping: </p>
-	<label><input type="radio" name="toppi" id="rock2" value="fiery" /><img src="19/button16-20_assets_rainbowSprinkles.png"></label>
-	<label><input type="radio" name="toppi" id="indie" value="blueb" /><img src="19/button16-20_assets_chocoChippies.png"></label>
-	<label><input type="radio" name="toppi" id="country" value="chive" /><img src="19/button16-20_assets_oreo.png"></label>
-	<label><input type="radio" name="toppi" id="country" value="pinkp" /><img src="19/button16-20_assets_differentEveryTime.png"></label>
+		<p>"Chive ________" </p>
+		<input type="radio" name="fucks" id="rock2" value="fiery" class="input-hidden"/>
+			<label for="indie">	<img src="20/button16-20_assets_slaps.png"></label>
+		<input type="radio" name="fucks" id="indie" value="blueb" class="input-hidden"/>
+			<label for="indie">	<img src="20/button16-20_assets_haventTried.png"></label>
+		<input type="radio" name="fucks" id="country" value="pinkp" class="input-hidden"/>
+			<label for="indie">	<img src="20/button16-20_assets_notGood.png"></label>
+		<input type="radio" name="fucks" id="country" value="chive" class="input-hidden"/>
+			<label for="indie">	<img src="20/button16-20_assets_employeesOnly.png"></label>
 
 
-	<p>"Chive ________" </p>
-	<label><input type="radio" name="fucks" id="rock2" value="fiery" /><img src="20/button16-20_assets_slaps.png"></label>
-	<label><input type="radio" name="fucks" id="indie" value="blueb" /><img src="20/button16-20_assets_haventTried.png"></label>
-	<label><input type="radio" name="fucks" id="country" value="pinkp" /><img src="20/button16-20_assets_notGood.png"></label>
-	<label><input type="radio" name="fucks" id="country" value="chive" /><img src="20/button16-20_assets_employeesOnly.png"></label>
+		<button type="submit" value="Submit">Finish Quiz!</button>
 
-
-<button type="submit" value="Submit">Finish Quiz!</button>
-
-</form>
+	</form>
 
 
 </div>
@@ -235,7 +251,7 @@ margin-top: 30px;
 
 		var checked = document.querySelectorAll('input:checked');
 
-		if (checked.length >= 20) {
+		if (checked.length == 20) {
 	   
 	  		bedtime = document.querySelector('input[name = "bedtime"]:checked').value;
 	 		activityLevel = document.querySelector('input[name = "activityLevel"]:checked').value;
@@ -276,12 +292,12 @@ margin-top: 30px;
 				if(x == "blueb") { blueb+=1}
 				if(x == "choco") { choco+=1}
 				if(x == "smoke") { smoke+=1}
-				if(x == "fiery") { fiery+=1}
+				if(x == "fiery") { fiery+=2}
 				if(x == "crano") { crano+=1}
 				if(x == "herbg") { herbg+=1}
-				if(x == "chive") { chive+=2}
+				if(x == "chive") { chive+=1}
 				if(x == "calab") { calab+=1}
-				if(x == "pinkp") { pinkp+=1}
+				if(x == "pinkp") { pinkp+=2}
 
 			}
 			// for the above function, you could also change the 1 to a variable so you could give more points for certain questions
@@ -317,32 +333,32 @@ margin-top: 30px;
 			maxscore = Math.max.apply(Math,all);
 		
 			//figure out which score is the max score by identifying its index number
-			for(i=0; i<all.length; i++) {
-				if(all[i]==maxscore) {
-				highest = i;
+			for (i = 0; i < all.length; i++) {
+				if (all[i] == maxscore) {
+					highest = i;
 				}
 			}
 	
 
 			// object holding scores and feedback	
-			scores = [{index:0, feedback: "You got Plain"},
-					{index:1, feedback: "You got Blueberry Lemon"},
-					{index:2, feedback: "You got Chocolate"},
-					{index:3, feedback: "You got Hickory Smoked"},
-					{index:4, feedback: "You got Fiery Fig"},
-					{index:5, feedback: "You got Cranberry Orange"},
-					{index:6, feedback: "You got Herb Garlic"},
-					{index:7, feedback: "You got Chive"},
-					{index:8, feedback: "You got Calabrini"},
-					{index:9, feedback: "Pink Peppercorn"}];
+			scores = [{index:0, feedback: "You got Plain. Yikes. Do you read books too? Haha kidding, books are great! There’s nothing wrong with being plain, but maybe pick up a hobby."},
+					{index:1, feedback: "You got Blueberry Lemon.  WHAT UPPPPP. BLUEBERRY LEMON. Interesting. I don’t think I know a true blueberry lemon. I bet you’re super chill. You do your own thing, but you also know how to have a good time. Live-love-eat-repeat, am I right?"},
+					{index:2, feedback: "You got Chocolate. The classic ~go with the flow~. You’re completely your own person, different from your piers, but you still fit in. I bet you’re pretty emotional too. Like, you don’t let other people see it, but you get sad too. It’s ok, it happens."},
+					{index:3, feedback: "You got Hickory Smoked! You’re a very specific type of person. And I just don’t know. I just don’t know how to describe it. You’re just… very interesting."},
+					{index:4, feedback: "You got Fiery Fig. You act like a tough guy, but deep down you’re kinda insecure. It’s gonna be ok! You got this! Fiery Figs may be secret softies, but you’re sick as heck! Loveable, fun, immaculate vibes. Go you."},
+					{index:5, feedback: "You got Cranberry Orange... You’re just full of surprises. I bet you live by that phrase, what is it? Oh, don’t judge a book by it’s cover. What a nice motto. You’re perfectly sweet. Don’t stop being you."},
+					{index:6, feedback: "You got Herb Garlic! Wow. WOW. Can I have your autograph? You're gonna be so successful someday. I know that's not a personality trait, but it kinda is..."},
+					{index:7, feedback: "You got Chive! You’re probably a college kid, or almost one at least. If you’re older… were you a frat boy? Maybe a free-spirit? Cool. Chive slaps ;). I bet you didn’t take this quiz by choice, somebody probably told you to. You were going to do it eventually because deep down you’re a good friend, but you’re kinda lazy. Me too."},
+					{index:8, feedback: "You got Calabrini.  You seem pretty cool. You’re the kinda person who is normal but like, add a leetle bit of SPICEEE. Yanno. Oh and some people say you’re controlling, but you say ~I just like things my way.~ Whatever floats your goat I guess!"},
+					{index:9, feedback: "You're a Pink Peppercorn.You’re either a dad or a nerd. In a good way though, like, you’re not basic, a bit witty. A little weird. That’s fine. Not afraid to express yourself. That’s great. All in all, I think you’re probably a good friend who advocates for what you believe in. Peppahhh."}];
 
 
 
 
 			//loop to match index to score and reply with feedback
-			for(i=0;i<scores.length; i++) {
+			for (i = 0; i<scores.length; i++) {
 				if(highest == scores[i].index) {
-					document.getElementById("answer4").innerHTML = scores[i].feedback;
+					document.getElementById("answer").innerHTML = scores[i].feedback;
 				}
 			}
 		}

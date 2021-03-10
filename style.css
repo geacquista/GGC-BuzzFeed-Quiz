@@ -1,0 +1,67 @@
+body {
+background-color:#ffffff;
+background: url('back.PNG') repeat-y center center fixed;
+background-size: cover;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+align-items: center;
+}
+
+#main {
+margin: 10%;
+padding: 10px;
+}
+
+#header {
+padding-left: 30px;
+padding-top: 10px;
+margin-top: 10px;
+margin-right: 10px;
+
+
+background-color: whitesmoke;
+text-align: center;
+font-size: 30px;
+
+color: crimson;
+height: 150px;
+}
+
+p {
+font-size: 200;
+text-align: center;
+font-display: auto;
+}
+
+label {
+display: auto ;
+} 
+
+.input-hidden {
+  position: absolute;
+  align-items: stretch;
+  left: -9999px;
+}
+
+input[type=radio]:checked + label>img {
+  border: 1px solid #fff;
+  box-shadow: 0 0 3px 3px rgb(245, 219, 255);
+}
+
+input[type=radio] + label>img {
+  border: 3px solid darkgray;
+  width: 250px;
+  height: 250px;
+  padding: auto;
+  align-items: auto;
+  transition: 500ms all;
+}
+
+input[type=radio]:checked + label>img {
+  transform: 
+   scale(1.15);
+}
+
+button {
+display: block;
+margin-top: 30px;
+}
