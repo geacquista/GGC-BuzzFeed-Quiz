@@ -1,18 +1,19 @@
 body {
-background: url('back.png') repeat-y center center fixed;
+background: url('back-8.png') repeat-y center center fixed;
 background-size: cover;
+background-attachment: fixed;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 align-items: center;
-height: 100%;
+height: 70%;
 }
 
 #main {
-margin: 10%;
+margin: 23%;
 padding: 10px;
 }
 
 #header {
-padding:10px;
+padding:auto;
 background-color: rgb(207, 118, 118);
 text-align: center;
 font-size: 20px auto;
@@ -38,14 +39,33 @@ h2 {
   height: 200px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 3%;
+  object-fit: cover;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content:"";
+  clear: both;
+  display: table;
+}
+
 label {
 display: auto ;
 } 
 
 .input-hidden {
   position: absolute;
-  align-items: stretch;
+  align-items: center;
   left: -9999px;
+  
 }
 
 input[type=radio]:checked + label>img {
@@ -54,9 +74,9 @@ input[type=radio]:checked + label>img {
 }
 
 input[type=radio] + label > img {
-  border: 3px solid darkgray;
-  width: 250px;
-  height: 250px;
+  border: 3px solid rgb(150, 17, 17);
+  width: 200px;
+  height: 200px;
   padding: auto;
   align-items: auto;
   transition: 500ms all;
@@ -69,6 +89,7 @@ input[type=radio]:checked + label>img {
 
 button {
 display: block;
-align-items: center;
 margin-top: 30px;
 }
+
+
