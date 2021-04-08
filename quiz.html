@@ -11,7 +11,7 @@
 	<script>
 		jQuery($ => {
 		  // The speed of the scroll in milliseconds
-		  const speed = 700;
+		  const speed = 300;
 	  
 		  $('a[href*="#"]')
 			.filter((i, a) => a.getAttribute('href').startsWith('#') || a.href.startsWith(`${location.href}#`))
@@ -63,7 +63,7 @@
 			<p><img src="questions/3.png" style="width:100%;height:100%"></p>
 			<div class = "row">
 				<div class = "column">
-					<input type="radio" name="activityLevel" id="basic" value="plain" class="input-hidden"/>
+					<input type="radio" name="activityLevel" id="basic" value="smoke" class="input-hidden"/>
 						<label for="basic"><img src="2/chicknood.png" style="width:100%;height:100%"></label>
 				</div>
 				<div class = "column">
@@ -79,7 +79,7 @@
 						<label for="omg"><img src="2/meatball.png" style="width:100%;height:100%"></label>
 				</div>
 			</div>
-			<p><a href="#3"><i class="arrow down"></i></a></p>
+			<p class="arrow"><a href="#3"><img src="down.png" style="width:2em; height:2em;"></a></p>
 
 			
 		</div>
@@ -101,11 +101,11 @@
 						<label for="layer"><img src="3/onion.png" style="width:100%;height:100%"></label>
 				</div>
 				<div class = "column">
-					<input type="radio" name="spirit" id="tomato" value="chive choco fiery" class="input-hidden"/>
+					<input type="radio" name="spirit" id="tomato" value="fiery" class="input-hidden"/>
 						<label for="tomato"><img src="3/tomahto.png" style="width:100%;height:100%"></label>
 				</div>
 			</div>
-			<p><a href="#4"><i class="arrow down"></i></a></p>
+			<p class="arrow"><a href="#4"><img src="down.png" style="width:2em; height:2em;"></a></p>
 
 			
 		</div>
@@ -114,23 +114,23 @@
 			<p><img src="questions/4.png" style="width:100%;height:100%"></p>
 			<div class = "row">
 				<div class = "column">
-					<input type="radio" name="calls" id="strong" value="plain herbg" class="input-hidden"/>
+					<input type="radio" name="calls" id="strong" value="herbg" class="input-hidden"/>
 						<label for="strong"><img src="4/bowser.png" style="width:100%;height:100%"></label>
 				</div>
 				<div class = "column">
-					<input type="radio" name="calls" id="easy" value="chive calab" class="input-hidden"/>
+					<input type="radio" name="calls" id="easy" value="choco calab" class="input-hidden"/>
 						<label for="easy"><img src="4/kirby.png" style="width:100%;height:100%"></label>
 				</div>
 				<div class = "column">	
-					<input type="radio" name="calls" id="typical" value="fiery blueb crano" class="input-hidden"/>
+					<input type="radio" name="calls" id="typical" value="plain blueb crano" class="input-hidden"/>
 						<label for="typical"><img src="4/mario.png" style="width:100%;height:100%"></label>
 				</div>
 				<div class = "column">
-					<input type="radio" name="calls" id="soft" value="pinkp choco" class="input-hidden"/>
+					<input type="radio" name="calls" id="soft" value="pinkp " class="input-hidden"/>
 						<label for="soft"><img src="4/peach.png" style="width:100%;height:100%"></label>				
 				</div>
 			</div>
-			<p><a href="#5"><i class="arrow down"></i></a></p>
+			<p class="arrow"><a href="#5"><img src="down.png" style="width:2em; height:2em;"></a></p>
 
 			
 		</div>
@@ -148,15 +148,15 @@
 						<label for="hungry"><img src="5/food.png" style="width:100%;height:100%"></label>	
 				</div>
 				<div class = "column">
-					<input type="radio" name="adventure" id="scared" value="fiery" class="input-hidden"/>
+					<input type="radio" name="adventure" id="scared" value="crano" class="input-hidden"/>
 						<label for="scared"><img src="5/heights.png" style="width:100%;height:100%"></label>	
 				</div>
 				<div class = "column">
-					<input type="radio" name="adventure" id="YAS" value="blueb choco plain pinkp" class="input-hidden"/>
+					<input type="radio" name="adventure" id="YAS" value="blueb choco" class="input-hidden"/>
 						<label for="YAS"><img src="5/sledding.png" style="width:100%;height:100%"></label>	
 				</div>
 			</div>
-			<p><a href="#6"><i class="arrow down"></i></a></p>
+			<p class="arrow"><a href="#6"><img src="down.png" style="width:2em; height:2em;"></a></p>
 
 			
 		</div>
@@ -165,15 +165,16 @@
 		<div class="q" id="6">
 			<p><img src="questions/6.png" style="width:100%;height:100%"></p>
 			<div class = "row">
-				<div class = "column"><input type="radio" name="tool" id="prot" value="pinkp choco" class="input-hidden"/>
-					<label for="prot"><img src="6/Bug spray.png" style="width:100%;height:100%"></label>
+				<div class = "column">
+					<input type="radio" name="tool" id="prot" value="plain choco" class="input-hidden"/>
+						<label for="prot"><img src="6/Bug spray.png" style="width:100%;height:100%"></label>
 				</div>
 				<div class = "column">
-					<input type="radio" name="tool" id="jammer" value="fiery crano" class="input-hidden"/>
+					<input type="radio" name="tool" id="jammer" value="crano" class="input-hidden"/>
 						<label for="jammer"><img src="6/Guitar.png" style="width:100%;height:100%"></label>				
 				</div>
 				<div class = "column">
-					<input type="radio" name="tool" id="scary2" value="blueb chive plain" class="input-hidden"/>
+					<input type="radio" name="tool" id="scary2" value="blueb" class="input-hidden"/>
 						<label for="scary2"><img src="6/A knife.png" style="width:100%;height:100%"></label>				
 				</div>
 				<div class = "column">
@@ -181,7 +182,7 @@
 						<label for="woop"><img src="6/Lol nothing.png" style="width:100%;height:100%"></label>				
 				</div>
 			</div>
-			<p><a href="#7"><i class="arrow down"></i></a></p>
+			<p class="arrow"><a href="#7"><img src="down.png" style="width:2em; height:2em;"></a></p>
 
 			
 			
@@ -195,7 +196,7 @@
 						<label for="tears"><img src="7/Cry.png" style="width:100%;height:100%"></label>
 				</div>
 				<div class = "column">
-					<input type="radio" name="study" id="cramY" value="pinkp smoke" class="input-hidden"/>
+					<input type="radio" name="study" id="cramY" value="pinkp smoke choco" class="input-hidden"/>
 						<label for="cramY"><img src="7/Cram.png" style="width:100%;height:100%"></label>				
 				</div>
 				<div class = "column">
@@ -203,19 +204,19 @@
 						<label for="email"><img src="7/Email Professor.png" style="width:100%;height:100%"></label>
 				</div>
 				<div class = "column">
-					<input type="radio" name="study" id="SNED" value="chive calab crano" class="input-hidden"/>
+					<input type="radio" name="study" id="SNED" value="chive calab" class="input-hidden"/>
 						<label for="SNED"><img src="7/Full send.png" style="width:100%;height:100%"></label>				
 				</div>
 			</div>		
-			<p><a href="#8"><i class="arrow down"></i></a></p>
-	
+			<p class="arrow"><a href="#8"><img src="down.png" style="width:2em; height:2em;"></a></p>
+
 		</div>
 
 		<div class="q" id="8">
 			<p><img src="questions/8.png" style="width:100%;height:100%"></p>
 			<div class = "row">
 				<div class = "column">
-					<input type="radio" name="squad" id="talker" value="pinkp" class="input-hidden"/>
+					<input type="radio" name="squad" id="talker" value="pinkp choco" class="input-hidden"/>
 						<label for="talker"><img src="8/Always Taking.png" style="width:100%;height:100%"></label>
 				</div>
 				<div class = "column">
@@ -231,7 +232,7 @@
 						<label for="kepto"><img src="8/The klepto.png" style="width:100%;height:100%"></label>				
 				</div>
 			</div>
-			<p><a href="#9"><i class="arrow down"></i></a></p>
+			<p class="arrow"><a href="#9"><img src="down.png" style="width:2em; height:2em;"></a></p>
 
 			
 		</div>
@@ -246,11 +247,11 @@
 						<label for="leader"><img src="9/The leader.png" style="width:100%;height:100%"></label>
 				</div>
 				<div class = "column">
-					<input type="radio" name="group" id="slacker" value="chive choco" class="input-hidden"/>
+					<input type="radio" name="group" id="slacker" value="chive" class="input-hidden"/>
 						<label for="slacker"><img src="9/The slacker.png" style="width:100%;height:100%"></label>				
 				</div>
 				<div class = "column">
-					<input type="radio" name="group" id="defa" value="pinkp" class="input-hidden"/>
+					<input type="radio" name="group" id="defa" value="pinkp plain" class="input-hidden"/>
 						<label for="defa"><img src="9/Default leader.png" style="width:100%;height:100%"></label>				
 				</div>
 				<div class = "column">
@@ -258,7 +259,7 @@
 						<label for="noconfront"><img src="9/Avoiding confrontation .png" style="width:100%;height:100%"></label>
 				</div>
 			</div>
-			<p><a href="#10"><i class="arrow down"></i></a></p>
+			<p class="arrow"><a href="#10"><img src="down.png" style="width:2em; height:2em;"></a></p>
 
 			
 		</div>
@@ -266,7 +267,7 @@
 
 
 		<div class="q" id="10">
-			<p><img src="questions/10.png" style="width:100%;height:100%">?</p>
+			<p><img src="questions/10.png" style="width:100%;height:100%"></p>
 			<div class = "row">
 				<div class = "column">
 					<input type="radio" name="friend" id="dinks" value="blueb" class="input-hidden"/>
@@ -277,7 +278,7 @@
 						<label for="togeth"><img src="10/Cry together.png" style="width:100%;height:100%"></label>				
 				</div>
 				<div class = "column">
-					<input type="radio" name="friend" id="no" value="chive pinkp" class="input-hidden"/>
+					<input type="radio" name="friend" id="no" value="plain pinkp" class="input-hidden"/>
 						<label for="no"><img src="10/Do nothing.png" style="width:100%;height:100%"></label>				
 				</div>
 				<div class = "column">
@@ -285,8 +286,8 @@
 						<label for="getOver"><img src="10/Get over it.png" style="width:100%;height:100%"></label>				
 				</div>
 			</div>	
-			<p><a href="#11"><i class="arrow down"></i></a></p>
-		
+			<p class="arrow"><a href="#11"><img src="down.png" style="width:2em; height:2em;"></a></p>
+
 		</div>
 
 
@@ -307,11 +308,11 @@
 						<label for="parent"><img src="11/ParentOfLike6-7Kids.png" style="width:100%;height:100%"></label>				
 				</div>
 				<div class = "column">
-					<input type="radio" name="grown" id="montana" value="fiery smoke choco" class="input-hidden"/>
+					<input type="radio" name="grown" id="montana" value="fiery choco" class="input-hidden"/>
 						<label for="montana"><img src="11/HannahMontana.png" style="width:100%;height:100%"></label>				
 				</div>
 			</div>
-			<p><a href="#12"><i class="arrow down"></i></a></p>
+			<p class="arrow"><a href="#12"><img src="down.png" style="width:2em; height:2em;"></a></p>
 
 			
 		</div>
@@ -330,7 +331,7 @@
 						<label for="all"><img src="12/ILiterallyListentoTheSameThingEverytimeIPlayMusic.png" style="width:100%;height:100%"></label>				
 				</div>
 				<div class = "column">
-					<input type="radio" name="music" id="rando" value="chive choco" class="input-hidden"/>
+					<input type="radio" name="music" id="rando" value="choco crano" class="input-hidden"/>
 						<label for="rando"><img src="12/ARandomAssortmentOfSongsIEnjoy.png" style="width:100%;height:100%"></label>
 				</div>
 				<div class = "column">
@@ -338,7 +339,7 @@
 						<label for="genre"><img src="12/MyFavoriteGenre.png" style="width:100%;height:100%"></label>	
 				</div>
 			</div>
-			<p><a href="#13"><i class="arrow down"></i></a></p>
+			<p class="arrow"><a href="#13"><img src="down.png" style="width:2em; height:2em;"></a></p>
 
 			
 		</div>
@@ -364,7 +365,7 @@
 						<label for="combo"><img src="13/ImAtTheCombinationKFCAndTacoBellOfWorcester.png" style="width:100%;height:100%"></label>			
 				</div>
 			</div>
-			<p><a href="#14"><i class="arrow down"></i></a></p>
+			<p class="arrow"><a href="#14"><img src="down.png" style="width:2em; height:2em;"></a></p>
 
 			
 		</div>
@@ -379,11 +380,11 @@
 						<label for="sw"><img src="14/Sweet.png" style="width:100%;height:100%"></label>
 				</div>
 				<div class = "column">
-					<input type="radio" name="spice" id="salt" value="pinkp calab" class="input-hidden"/>
+					<input type="radio" name="spice" id="salt" value="chive calab" class="input-hidden"/>
 						<label for="salt"><img src="14/Salty.png" style="width:100%;height:100%"></label>	
 				</div>
 				<div class = "column">
-					<input type="radio" name="spice" id="sour" value="chive smoke" class="input-hidden"/>
+					<input type="radio" name="spice" id="sour" value=" smoke" class="input-hidden"/>
 						<label for="sour"><img src="14/Sour.png" style="width:100%;height:100%"></label>		
 				</div>
 				<div class = "column">
@@ -391,8 +392,8 @@
 						<label for="spicey"><img src="14/SpiZy.png" style="width:100%;height:100%"></label>
 				</div>
 			</div>
-			<p><a href="#15"><i class="arrow down"></i></a></p>
-	
+			<p class="arrow"><a href="#15"><img src="down.png" style="width:2em; height:2em;"></a></p>
+
 			
 		</div>
 
@@ -401,11 +402,11 @@
 			<p><img src="questions/15.png" style="width:100%;height:100%"></p>
 			<div class = "row">
 				<div class = "column">
-					<input type="radio" name="cheese" id="sppon" value="crano plain" class="input-hidden"/>
+					<input type="radio" name="cheese" id="sppon" value="crano " class="input-hidden"/>
 						<label for="sppon"><img src="15/TypicalSpoon.png" style="width:100%;height:100%"></label>
 				</div>
 				<div class = "column">
-					<input type="radio" name="cheese" id="fork" value="blueb" class="input-hidden"/>
+					<input type="radio" name="cheese" id="fork" value="blueb plain" class="input-hidden"/>
 						<label for="fork"><img src="15/AverageFork.png" style="width:100%;height:100%"></label>	
 				</div>
 				<div class = "column">
@@ -413,11 +414,11 @@
 						<label for="notdirty"><img src="15/UsingWhateverIsNotInThePileOfDirtyDishes.png" style="width:100%;height:100%"></label>	
 				</div>
 				<div class = "column">
-					<input type="radio" name="cheese" id="wood" value="fiery chive" class="input-hidden"/>
+					<input type="radio" name="cheese" id="wood" value="fiery" class="input-hidden"/>
 						<label for="wood"><img src="15/IdEatItOutOfThePotWithTheWoodenSpoonICookedWith.png" style="width:100%;height:100%"></label>	
 				</div>
 			</div>
-			<p><a href="#16"><i class="arrow down"></i></a></p>
+			<p class="arrow"><a href="#16"><img src="down.png" style="width:2em; height:2em;"></a></p>
 
 			
 		</div>
@@ -427,7 +428,7 @@
 			<p><img src="questions/16.png" style="width:100%;height:100%"></p>
 			<div class = "row">
 				<div class = "column">
-					<input type="radio" name="harry" id="g" value="pinkp plain herbg" class="input-hidden"/>
+					<input type="radio" name="harry" id="g" value="plain herbg" class="input-hidden"/>
 						<label for="g">	<img src="16/button16-20_assets_gryffindor.png" style="width:100%;height:100%"></label>
 				</div>
 				<div class = "column">
@@ -439,11 +440,11 @@
 						<label for="h"><img src="16/button16-20_assets_hufflepuff.png" style="width:100%;height:100%"></label>				
 				</div>
 				<div class = "column">
-					<input type="radio" name="harry" id="s" value="fiery choco chive" class="input-hidden"/>
+					<input type="radio" name="harry" id="s" value="chive" class="input-hidden"/>
 						<label for="s"><img src="16/button16-20_assets_slytherin.png" style="width:100%;height:100%"></label>				
 				</div>
 			</div>
-			<p><a href="#17"><i class="arrow down"></i></a></p>
+			<p class="arrow"><a href="#17"><img src="down.png" style="width:2em; height:2em;"></a></p>
 
 			
 		</div>
@@ -454,7 +455,7 @@
 			<p><img src="questions/17.png" style="width:100%;height:100%"></p>
 			<div class = "row">
 				<div class = "column">
-					<input type="radio" name="danny" id="burr" value="plain choco" class="input-hidden"/>
+					<input type="radio" name="danny" id="burr" value="choco" class="input-hidden"/>
 						<label for="burr">	<img src="17/button16-20_assets_dannyBurrito.png" style="width:100%;height:100%"></label>
 				</div>
 				<div class = "column">
@@ -470,7 +471,7 @@
 						<label for="beet">	<img src="17/button16-20_assets_dannyDeBeeto.png" style="width:100%;height:100%"></label>				
 				</div>
 			</div>
-			<p><a href="#18"><i class="arrow down"></i></a></p>
+			<p class="arrow"><a href="#18"><img src="down.png" style="width:2em; height:2em;"></a></p>
 
 			
 		</div>
@@ -481,11 +482,11 @@
 			<p><img src="questions/18.png" style="width:100%;height:100%"></p>
 			<div class = "row">
 				<div class = "column">
-					<input type="radio" name="cook" id="mash" value="blueb calab" class="input-hidden"/>
+					<input type="radio" name="cook" id="mash" value="calab" class="input-hidden"/>
 						<label for="mash">	<img src="18/button16-20_assets_mashed.png" style="width:100%;height:100%"></label>
 				</div>
 				<div class = "column">
-					<input type="radio" name="cook" id="smash" value="chive choco" class="input-hidden"/>
+					<input type="radio" name="cook" id="smash" value="chive" class="input-hidden"/>
 						<label for="smash">	<img src="18/button16-20_assets_smashed.png" style="width:100%;height:100%"></label>				
 				</div>
 				<div class = "column">
@@ -493,11 +494,11 @@
 						<label for="bake">	<img src="18/button16-20_assets_baked.png" style="width:100%;height:100%"></label>				
 				</div>
 				<div class = "column">
-					<input type="radio" name="cook" id="sweete" value="crano" class="input-hidden"/>
+					<input type="radio" name="cook" id="sweete" value="crano blueb" class="input-hidden"/>
 						<label for="sweete">	<img src="18/button16-20_assets_anySweet.png" style="width:100%;height:100%"></label>				
 				</div>
 			</div>
-			<p><a href="#19"><i class="arrow down"></i></a></p>
+			<p class="arrow"><a href="#19"><img src="down.png" style="width:2em; height:2em;"></a></p>
 
 	
 			
@@ -512,7 +513,7 @@
 						<label for="sprink"><img src="19/button16-20_assets_rainbowSprinkles.png" style="width:100%;height:100%"></label>
 				</div>
 				<div class = "column">
-					<input type="radio" name="toppi" id="chippies" value="blueb plain choco" class="input-hidden"/>
+					<input type="radio" name="toppi" id="chippies" value="plain choco" class="input-hidden"/>
 						<label for="chippies"><img src="19/button16-20_assets_chocoChippies.png" style="width:100%;height:100%"></label>				
 				</div>
 				<div class = "column">
@@ -520,21 +521,21 @@
 						<label for="oreo"><img src="19/button16-20_assets_oreo.png" style="width:100%;height:100%"></label>				
 				</div>
 				<div class = "column">
-					<input type="radio" name="toppi" id="dif" value="herbg crano pinkp" class="input-hidden"/>
+					<input type="radio" name="toppi" id="dif" value="crano pinkp" class="input-hidden"/>
 						<label for="dif"><img src="19/button16-20_assets_differentEveryTime.png" style="width:100%;height:100%"></label>		
 				</div>
 			</div>	
-			<p><a href="#20"><i class="arrow down"></i></a></p>
+			<p class="arrow"><a href="#20"><img src="down.png" style="width:2em; height:2em;"></a></p>
 
 			
 		</div>
 
 
-		<div class="q" id="20">
+		<div class="q" style="margin-bottom: 2%;"id="20">
 			<p><img src="questions/20.png" style="width:100%;height:100%"></p>
 			<div class = "row">
 				<div class = "column">
-					<input type="radio" name="fucks" id="slap" value="" class="input-hidden"/>
+					<input type="radio" name="fucks" id="slap" value="smoke" class="input-hidden"/>
 						<label for="slap"><img src="20/button16-20_assets_slaps.png" style="width:100%;height:100%"></label>
 				</div>
 				<div class = "column">
@@ -542,7 +543,7 @@
 						<label for="havent"><img src="20/button16-20_assets_haventTried.png" style="width:100%;height:100%"></label>				
 				</div>
 				<div class = "column">
-					<input type="radio" name="fucks" id="notgood" value="" class="input-hidden"/>
+					<input type="radio" name="fucks" id="notgood" value="calab" class="input-hidden"/>
 						<label for="notgood"><img src="20/button16-20_assets_notGood.png" style="width:100%;height:100%"></label>				
 				</div>
 				<div class = "column">
@@ -553,15 +554,18 @@
 
 			
 		</div>
-
-
-		<button type="submit" value="Submit">Finish Quiz!</button>
+					
+			<div class="popup" >
+				<button class="finish-but" type="submit" id="b1" value="Submit">Finish Quiz</button>
+				<span class="popuptext center-of-screen" id="myPopup"><p id="selected">Click the finish button already!!</p></span>
+			</div>
 
 	</form>
 
 
 </div>
-<h2 id="selected"></h2>
+
+
 
 
 <script>
@@ -681,14 +685,13 @@
 					document.getElementById("selected").innerHTML = scores[i].feedback;
 				}
 			}
+
+
 		}
 	else alert("Fill out all questions before submitting.");
 
 	return false; // required to not refresh the page; just leave this here
 }
 </script>
-
-<input type="button" value="Open a Popup Window" onclick="window.open('other.html','popUpWindow','height=500,width=400,left=100,top=100,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no, status=yes');">
-
 </body>
 </html>
