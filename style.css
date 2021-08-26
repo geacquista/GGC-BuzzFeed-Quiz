@@ -1,6 +1,5 @@
 html {
   scroll-behavior: smooth;
-  
 }
 
 body {
@@ -15,7 +14,7 @@ height: 70%;
 #main {
 margin-left: 8%;
 margin-right: 8%;
-margin-top: 5%;
+margin-top: 2%;
 margin-bottom: 2%;
 
 }
@@ -68,7 +67,7 @@ margin:12%;
 .start-but:hover {
   border-color: "#972525";
   transition: all 2s ease;
-  background: rgb(129, 224, 91);
+  background: rgb(224, 106, 91);
   box-shadow: 0px 0px 4px #777;
 }
 
@@ -95,7 +94,7 @@ p {
 
 .column {
   float: left;
-  width: 25%;
+  width: 50%;
   padding: 1%;
   object-fit: cover;
 }
@@ -109,9 +108,9 @@ p {
 
 .q {
   align-items: center;
-  margin-top: 10%;
-  padding: 10px;
-  margin-bottom: 25%;
+  margin-top: 2%;
+  padding: 14%;
+  margin-bottom: 10%;
 }
 
 .input-hidden {
@@ -150,80 +149,43 @@ align-items: center;
   transform: scale(1.2);
 }
 
-.popup {
-  position: relative;
-  display: inline-block;
-  padding:10%;
-  width:100%;
-  height:100%;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-
-/* The actual popup */
-
-.popup .popuptext {
-  visibility: hidden;
-  width: 100%;
-  height: fit-content;
-  background-color: rgb(110, 0, 15);
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 3%;
-  position: absolute;
- 
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%;
 }
 
-
-
-.popup .popuptext::after {
-  content: "";
-  visibility: visible;
-  position: absolute;
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
 }
 
-
-/* Toggle this class - hide and show the popup */
-
-.popup .show {
-  visibility: visible;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s;
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
-
-.popup #b1:hover + .popuptext {
-  visibility: visible;
-  opacity: 1;
-}
- 
-.center-of-screen {
-  position: absolute;
-  align-items: center;
-  top: -20%;     
-  margin-top:  -100px;   
-  margin-left: -70px;
-}
-
-/* Add animation (fade in the popup) */
-
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-} 
